@@ -1,0 +1,149 @@
+{
+    "metadata": {
+        "date_time": "18.04.2019 11:13:58",
+        "payment_method": "Банковская карта",
+        "total_sum": 18009.0
+    },
+    "items": [
+        {
+            "item_no": "1",
+            "name": "Натрия хлорид 0,9%, 200 мл, фл",
+            "quantity": 2.0,
+            "price_per_unit": 154.0,
+            "total_cost": 308.0
+        },
+        {
+            "item_no": "2",
+            "name": "Борный спирт 3%, 20 мл, фл.",
+            "quantity": 1.0,
+            "price_per_unit": 51.0,
+            "total_cost": 51.0
+        },
+        {
+            "item_no": "3",
+            "name": "Шприц 2 мл, 3-х комп. (Bioject)",
+            "quantity": 2.0,
+            "price_per_unit": 16.0,
+            "total_cost": 32.0
+        },
+        {
+            "item_no": "4",
+            "name": "Система для инфузии Vogt Medical",
+            "quantity": 2.0,
+            "price_per_unit": 60.0,
+            "total_cost": 120.0
+        },
+        {
+            "item_no": "5",
+            "name": "Шприц 5 мл, 3-х комп.",
+            "quantity": 1.0,
+            "price_per_unit": 310.0,
+            "total_cost": 310.0
+        },
+        {
+            "item_no": "6",
+            "name": "AURA Ватные диски №150",
+            "quantity": 1.0,
+            "price_per_unit": 461.0,
+            "total_cost": 461.0
+        },
+        {
+            "item_no": "7",
+            "name": "Чистая линия скраб мягкий 50 мл",
+            "quantity": 1.0,
+            "price_per_unit": 381.0,
+            "total_cost": 381.0
+        },
+        {
+            "item_no": "8",
+            "name": "Чистая линия  скраб очищающийабрикос 50 мл",
+            "quantity": 1.0,
+            "price_per_unit": 386.0,
+            "total_cost": 386.0
+        },
+        {
+            "item_no": "9",
+            "name": "Чистая линия скраб мягкий 50 мл",
+            "quantity": 1.0,
+            "price_per_unit": 381.0,
+            "total_cost": 381.0
+        },
+        {
+            "item_no": "10",
+            "name": "Nivea шампунь 3в1мужской  400 мл",
+            "quantity": 1.0,
+            "price_per_unit": 414.0,
+            "total_cost": 414.0
+        },
+        {
+            "item_no": "11",
+            "name": "Pro Series Шампунь яркий цвет 500мл",
+            "quantity": 1.0,
+            "price_per_unit": 841.0,
+            "total_cost": 841.0
+        },
+        {
+            "item_no": "12",
+            "name": "Pro Series бальзам-ополаскивательдля длител ухода за окрашеннымиволосами Яркий цвет 500мл",
+            "quantity": 1.0,
+            "price_per_unit": 841.0,
+            "total_cost": 841.0
+        },
+        {
+            "item_no": "13",
+            "name": "Clear шампунь Актив спорт 2в1мужской  400 мл",
+            "quantity": 1.0,
+            "price_per_unit": 1200.0,
+            "total_cost": 1200.0
+        },
+        {
+            "item_no": "14",
+            "name": "Bio World (HYDRO THERAPY)Мицеллярная вода 5в1, 445мл",
+            "quantity": 1.0,
+            "price_per_unit": 1152.0,
+            "total_cost": 1152.0
+        },
+        {
+            "item_no": "15",
+            "name": "Bio World (HYDRO THERAPY) Гель-муссдля умывания с гиалуроновойкислотой, 250мл",
+            "quantity": 1.0,
+            "price_per_unit": 1152.0,
+            "total_cost": 1152.0
+        },
+        {
+            "item_no": "16",
+            "name": "[RX]-Натрия хлорид 0,9%, 100 мл, фл.",
+            "quantity": 1.0,
+            "price_per_unit": 168.0,
+            "total_cost": 168.0
+        },
+        {
+            "item_no": "17",
+            "name": "[RX]-Дисоль р-р 400 мл, фл.",
+            "quantity": 1.0,
+            "price_per_unit": 163.0,
+            "total_cost": 163.0
+        },
+        {
+            "item_no": "18",
+            "name": "Тагансорбент с иономи серебра №30,пор.",
+            "quantity": 1.0,
+            "price_per_unit": 1526.0,
+            "total_cost": 1526.0
+        },
+        {
+            "item_no": "19",
+            "name": "[RX]-Церукал 2%, 2 мл, №10, амп.",
+            "quantity": 2.0,
+            "price_per_unit": 396.0,
+            "total_cost": 792.0
+        },
+        {
+            "item_no": "20",
+            "name": "[RX]-Андазол 200 мг, №40, табл.",
+            "quantity": 1.0,
+            "price_per_unit": 7330.0,
+            "total_cost": 7330.0
+        }
+    ]
+}
