@@ -1,64 +1,33 @@
 import pygame
 
-
 class Ball:
-    def __init__(self, x: int, y: int, radius: int = 25, color=(255, 0, 0), step: int = 5):
+    def __init__(self, x, y, radius=20):
         self.x = x
         self.y = y
         self.radius = radius
-        self.color = color
-        self.step = step
-
-    def move(self, dx: int, dy: int, screen_width: int, screen_height: int):
-        new_x = self.x + dx
-        new_y = self.y + dy
-
-        if self.radius <= new_x <= screen_width - self.radius:
-            self.x = new_x
-        if self.radius <= new_y <= screen_height - self.radius:
-            self.y = new_y
+        self.color = (255, 0, 0)
+        self.step = 5
 
     def draw(self, screen):
         pygame.draw.circle(screen, self.color, (self.x, self.y), self.radius)
 
+    def move(self, dx, dy):
+        self.x += dx
+        self.y += dy
 
-def main():
-    pygame.init()
+    def check_bounds(self, width, height):
+        
+        if self.x - self.radius < 0:
+            self.x = self.radius
 
-    screen_width = 800
-    screen_height = 600
-    screen = pygame.display.set_mode((screen_width, screen_height))
-    pygame.display.set_caption("Moving Ball")
+        
+        if self.x + self.radius > width:
+            self.x = width - self.radius
 
-    clock = pygame.time.Clock()
+        
+        if self.y - self.radius < 0:
+            self.y = self.radius
 
-    ball = Ball(400, 300)
-
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-
-        keys = pygame.key.get_pressed()
-
-        if keys[pygame.K_LEFT]:
-            ball.move(-ball.step, 0, screen_width, screen_height)
-        if keys[pygame.K_RIGHT]:
-            ball.move(ball.step, 0, screen_width, screen_height)
-        if keys[pygame.K_UP]:
-            ball.move(0, -ball.step, screen_width, screen_height)
-        if keys[pygame.K_DOWN]:
-            ball.move(0, ball.step, screen_width, screen_height)
-
-        screen.fill((0, 0, 0))
-        ball.draw(screen)
-
-        pygame.display.flip()
-        clock.tick(60)  # 60 FPS (чтобы движение было плавное)
-
-    pygame.quit()
-
-
-if __name__ == "__main__":
-    main()
+       
+        if self.y + self.radius > height:
+            self.y = height - self.radius

@@ -1,35 +1,41 @@
 import pygame
 from ball import Ball
 
-SCREEN_WIDTH = 640
-SCREEN_HEIGHT = 480
-BACKGROUND_COLOR = (255, 255, 255)
-FPS = 60
+pygame.init()
 
+WIDTH = 800
+HEIGHT = 600
 
-def main() -> None:
-    pygame.init()
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    pygame.display.set_caption("Moving Ball")
-    clock = pygame.time.Clock()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Ball Game")
 
-    ball = Ball(x=SCREEN_WIDTH // 2, y=SCREEN_HEIGHT // 2)
+ball = Ball(WIDTH // 2, HEIGHT // 2)
 
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-            elif event.type == pygame.KEYDOWN:
-                ball.handle_key(event.key, SCREEN_WIDTH, SCREEN_HEIGHT)
+clock = pygame.time.Clock()
+running = True
 
-        screen.fill(BACKGROUND_COLOR)
-        ball.draw(screen)
-        pygame.display.flip()
-        clock.tick(FPS)
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
 
-    pygame.quit()
+    keys = pygame.key.get_pressed()
 
+    if keys[pygame.K_a]:
+        ball.move(-ball.step, 0)
+    if keys[pygame.K_d]:
+        ball.move(ball.step, 0)
+    if keys[pygame.K_w]:
+        ball.move(0, -ball.step)
+    if keys[pygame.K_s]:
+        ball.move(0, ball.step)
 
-if __name__ == "__main__":
-    main()
+    ball.check_bounds(WIDTH, HEIGHT)
+
+    screen.fill((255, 255, 255))
+    ball.draw(screen)
+
+    pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()
