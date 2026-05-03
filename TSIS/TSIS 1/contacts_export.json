@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Smith",
+    "email": "alice@gmail.com",
+    "birthday": "1990-05-14",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "87001112233",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bob Jones",
+    "email": "bob@work.com",
+    "birthday": "1985-11-30",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "87009998877",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Carol White",
+    "email": "carol@yahoo.com",
+    "birthday": "1995-03-22",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "87771234567",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Zhangir",
+    "email": null,
+    "birthday": null,
+    "group": null,
+    "phones": []
+  },
+  {
+    "id": 5,
+    "name": "Nurasyl",
+    "email": "nurassyl@gmail.con",
+    "birthday": "2006-09-27",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "87097896548",
+        "type": "mobile"
+      }
+    ]
+  }
+]

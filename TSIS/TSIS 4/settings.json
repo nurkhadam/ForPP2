@@ -1,0 +1,26 @@
+{
+    "snake_head_color": [
+        50,
+        220,
+        220
+    ],
+    "snake_body_color": [
+        30,
+        160,
+        160
+    ],
+    "snake_outline_color": [
+        10,
+        90,
+        90
+    ],
+    "grid_overlay": false,
+    "sound": true,
+    "db": {
+        "host": "localhost",
+        "port": 5432,
+        "dbname": "snake_game",
+        "user": "postgres",
+        "password": "0000"
+    }
+}
